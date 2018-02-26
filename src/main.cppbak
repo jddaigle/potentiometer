@@ -1,0 +1,20 @@
+#include <esp_log.h>
+#include <Arduino.h>
+
+#define INPUT_PIN 34
+int val = 0;  
+
+void setup()
+{
+	Serial.begin(9600);
+	Serial.println(val);
+	pinMode(INPUT_PIN, INPUT);
+}
+
+void loop()
+{
+	Serial.println("READ POT");
+	val = analogRead(INPUT_PIN);
+	Serial.println(val);
+	delay(1000);
+}
