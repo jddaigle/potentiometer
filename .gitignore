@@ -1,6 +1,5 @@
 .pioenvs
 .piolibdeps
-.clang_complete
-.gcc-flags.json
+.vscode/*.db
 .vscode/c_cpp_properties.json
 .vscode/launch.json
